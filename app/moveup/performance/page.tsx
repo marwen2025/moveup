@@ -19,9 +19,8 @@ const dailyData = [
     { day: 'Sat', distance: 75 },
     { day: 'Sun', distance: 40 },
 ]
-interface MoveUpPerformanceProps extends CircularProgressProps {}
 
-function MoveUpPerformance({ progress = 80, size = 200, strokeWidth = 30 }: MoveUpPerformanceProps) {
+function MoveUpPerformance({ progress = 80, size = 200, strokeWidth = 30 }: CircularProgressProps) {
     const radius = (size - strokeWidth) / 2;
     const circumference = radius * 2 * Math.PI;
     const strokeDashoffset = circumference - (progress / 100) * circumference;
