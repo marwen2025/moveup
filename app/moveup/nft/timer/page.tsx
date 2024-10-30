@@ -3,7 +3,6 @@
 import Image from "next/image";
 import NavBar from "@/Components/NavBar";
 import Footer from "@/Components/Footer"
-import { useState } from "react";
 function Timer() {
     const time ={
         hours: 0,
