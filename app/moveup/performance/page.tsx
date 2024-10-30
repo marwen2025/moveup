@@ -4,12 +4,6 @@ import NavBar from "@/Components/NavBar";
 import Footer from "@/Components/Footer";
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts'
 
-
-interface CircularProgressProps {
-    progress: number
-    size?: number
-    strokeWidth?: number
-}
 const dailyData = [
     { day: 'Mon', distance: 50 },
     { day: 'Tue', distance: 80 },
@@ -20,7 +14,10 @@ const dailyData = [
     { day: 'Sun', distance: 40 },
 ]
 
-function MoveUpPerformance({ progress = 80, size = 200, strokeWidth = 30 }: CircularProgressProps) {
+function MoveUpPerformance() {
+    const progress =70 ;
+    const size = 200;
+    const strokeWidth = 30 ;
     const radius = (size - strokeWidth) / 2;
     const circumference = radius * 2 * Math.PI;
     const strokeDashoffset = circumference - (progress / 100) * circumference;
