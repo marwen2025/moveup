@@ -5,11 +5,11 @@ import NavBar from "@/Components/NavBar";
 import Footer from "@/Components/Footer"
 import { useState } from "react";
 function Timer() {
-    const [time, setTime] = useState({
+    const time ={
         hours: 0,
         minutes: 1,
         seconds: 27,
-    })
+    }
 
     // Pad numbers with leading zeros
     const pad = (num: number, places: number) => String(num).padStart(places, '0')

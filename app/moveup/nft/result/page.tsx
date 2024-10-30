@@ -1,21 +1,9 @@
-"use client"
 
 import Image from "next/image";
 import NavBar from "@/Components/NavBar";
 import Footer from "@/Components/Footer"
-import { useState } from "react";
 function Timer() {
-    const [time, setTime] = useState({
-        hours: 0,
-        minutes: 1,
-        seconds: 27,
-    })
-
-    // Pad numbers with leading zeros
-    const pad = (num: number, places: number) => String(num).padStart(places, '0')
-
-    // Split number into individual digits
-    const splitIntoDigits = (num: string) => num.split('')
+    
 
     return (
         <div className="text-white h-screen">

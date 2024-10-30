@@ -2,10 +2,8 @@
 import Image from "next/image";
 import NavBar from "@/Components/NavBar";
 import Footer from "@/Components/Footer";
-import DistanceSlider from "@/Components/DistanceSlider";
 import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts'
 
-import { useState } from "react";
 
 interface CircularProgressProps {
     progress: number

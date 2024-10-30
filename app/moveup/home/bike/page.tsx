@@ -2,7 +2,6 @@
 import Image from "next/image";
 import NavBar from "@/Components/NavBar";
 import Footer from "@/Components/Footer";
-import DistanceSlider from "@/Components/DistanceSlider";
 import { useState } from "react";
 function MoveUpHome() {
     const [distanceToggle, setDistanceToggle] = useState(true)
