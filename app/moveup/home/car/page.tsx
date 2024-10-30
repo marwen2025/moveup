@@ -125,36 +125,41 @@ function MoveUpHome() {
                         <div className=" pt-8">
                             <div className="bg-black bg-opacity-70 px-16 py-4 rounded-full p-2">
 
-                                <div className="flex flex-row  justify-between">
+                            <div className="flex flex-row space-x-14 justify-between">
+                                <a href="/moveup/">
                                     <Image
-                                        src="/home.svg"
-                                        alt="Profile Picture"
-                                        width={50}
-                                        height={50}
-                                        className="rounded-2xl "
-                                    />
-                                    <Image
-                                        src="/performance.svg"
-                                        alt="Profile Picture"
-                                        width={50}
-                                        height={50}
-                                        className="rounded-2xl opacity-50"
-                                    />
-                                    <Image
-                                        src="/wallet.svg"
-                                        alt="Profile Picture"
-                                        width={50}
-                                        height={50}
-                                        className="rounded-2xl opacity-50"
-                                    />
-                                    <Image
-                                        src="/nft.svg"
-                                        alt="Profile Picture"
-                                        width={50}
-                                        height={50}
-                                        className="rounded-2xl opacity-50"
-                                    />
-                                </div>
+                                    src="/home.svg"
+                                    alt="Profile Picture"
+                                    width={50}
+                                    height={50}
+                                    className="rounded-2xl"
+                                /></a>
+                                <a href="/moveup/performance">
+                                <Image
+                                    src="/performance.svg"
+                                    alt="Profile Picture"
+                                    width={50}
+                                    height={50}
+                                    className="rounded-2xl opacity-50"
+                                />
+                                </a>
+                                <a className="place-self-center" href="/moveup/wallet">
+                                <Image
+                                    src="/wallet.svg"
+                                    alt="Profile Picture"
+                                    width={50}
+                                    height={50}
+                                    className="rounded-2xl opacity-50"
+                                />
+                                </a>
+                                <a href="/moveup/nft" className="place-self-center"><Image
+                                    src="/nft.svg"
+                                    alt="Profile Picture"
+                                    width={80}
+                                    height={80}
+                                    className=" opacity-50 "
+                                /></a>
+                            </div>
                             </div>
                         </div>
                     </div>
